@@ -120,10 +120,10 @@ function tokenizer(input, opts={}) {
     return tokens;
 }
 
-// 有限状态机进入初时状态;
+// 有限状态机进入初时状态，每次进入初时状态调用改函数;
+// 初时状态包含两种状态，一种是开始解析源代码字符串流，另一种状态是解析完一个token之后；
+// 保存上一次解析完的token；
 // 初始状态其实并不做停留，它马上进入其他状态。
-// 开始解析的时候，进入初始状态；某个Token解析完毕，也进入初始状态，在这里把Token记下来，然后建立一个新的Token。
-// 存储token
 function initToken(pos, input){
     const ch = input[pos];
     const leftInput = input.slice(pos);

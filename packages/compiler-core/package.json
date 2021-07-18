@@ -7,7 +7,7 @@
     "core",
     "theory"
   ],
-  "author": "linchengyong <linchengyong@bytedance.com>",
+  "author": "linchengyong <chengyong.lin@foxmail.com>",
   "homepage": "https://github.com/jacklovepdf/compiler-advanced#readme",
   "license": "MIT",
   "main": "lib/compiler-core.js",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://npm.byted.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
